@@ -41,7 +41,7 @@ RingBuffer::~RingBuffer() {
 
 void RingBuffer::create_and_map() {
     glBindBuffer(purpose_, buffer_[0]);
-    glBufferStorage(purpose_, capacity_, nullptr, GL_MAP_WRITE_BIT | GL_MAP_PERSISTENT_BIT | GL_MAP_COHERENT_BIT);
+    //glBufferStorage(purpose_, capacity_, nullptr, GL_MAP_WRITE_BIT | GL_MAP_PERSISTENT_BIT | GL_MAP_COHERENT_BIT);
 
     base_ = static_cast<std::uint8_t *>(glMapBufferRange(purpose_, 0, capacity_, GL_MAP_WRITE_BIT | GL_MAP_PERSISTENT_BIT | GL_MAP_COHERENT_BIT));
 
