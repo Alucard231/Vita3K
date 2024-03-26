@@ -113,7 +113,7 @@ void sync_mask(const GLState &state, GLContext &context, const MemState &mem) {
     GLubyte initial_byte = context.record.depth_stencil_surface.mask ? 0xFF : 0;
 
     GLubyte clear_bytes[4] = { initial_byte, initial_byte, initial_byte, initial_byte };
-    glClearTexImage(context.render_target->masktexture[0], 0, GL_RGBA, GL_UNSIGNED_BYTE, clear_bytes);
+    //glClearTexImage(context.render_target->masktexture[0], 0, GL_RGBA, GL_UNSIGNED_BYTE, clear_bytes);
 }
 
 void sync_viewport_flat(const GLState &state, GLContext &context) {
