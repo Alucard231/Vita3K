@@ -31,7 +31,7 @@
 #include <shader/spirv_recompiler.h>
 
 #include <cmath>
-
+ 
 namespace renderer::gl {
 
 static GLenum translate_depth_func(SceGxmDepthFunc depth_func) {
